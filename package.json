@@ -1,0 +1,20 @@
+{
+  "name": "backendlibreria101",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "middlewares",
+    "base de datos",
+    "MongoDB",
+    "ExpressJS"
+  ],
+  "author": "Leonardo Recalde",
+  "license": "ISC",
+  "description": "backend para el proyecto libreria 101",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
