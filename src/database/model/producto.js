@@ -34,21 +34,18 @@ const esquemaDeProducto = new Schema({
     required: true,
     minLength: 2,
     maxLength: 100,
-    unique: true,
   },
   descripcion_breve: {
     type: String,
     required: true,
     minLength: 3,
-    maxLength: 50,
-    unique: true,
+    maxLength: 50
   },
   descripcion_amplia: {
     type: String,
     required: true,
     minLength: 50,
-    maxLength: 1000,
-    unique: true,
+    maxLength: 1000
   },
 });
 

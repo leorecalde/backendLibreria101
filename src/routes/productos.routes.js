@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { funcionPrueba } from "../controllers/productos.controllers.js";
+import { crearProducto, funcionPrueba } from "../controllers/productos.controllers.js";
 
 
 const ruta = Router();
 ruta.route('/prueba').get(funcionPrueba)
+ruta.route('/productos').post(crearProducto)
 
 export default ruta
