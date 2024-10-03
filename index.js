@@ -4,6 +4,7 @@ import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import './src/database/dbConnection.js'
+import ruta from './src/routes/productos.routes.js';
 
 //1-configurar un puerto, debe ser un repo q trabaje 24/7
 const app = express();
@@ -32,7 +33,4 @@ app.use(express.static(path.join(__dirname, '/public')))
 
 //3- configurar las rutas
 // http://localhost:4000/prueba
-app.get('/prueba',(req, res) =>{
-    console.log('alguien hizo una solicitud get a la ruta de prueba')
-    res.send('hola mundo desde el backend')
-})
+app.use('/api', ruta)
